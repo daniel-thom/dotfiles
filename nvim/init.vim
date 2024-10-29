@@ -11,7 +11,7 @@ call plug#begin('~/.local/share/nvim/plugged')
 
 set rtp+=/Users/dthom/brew/opt/fzf
 
-"Plug '/usr/local/opt/fzf'
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 Plug 'JuliaEditorSupport/julia-vim'
 Plug 'bling/vim-airline'
@@ -220,6 +220,7 @@ lua << EOF
     if filename ~= nil then
     	local cmd = string.format("edit +%s %s", line, filename)
     	vim.api.nvim_command(cmd)
+        return
     end
     
     -- python traceback
@@ -228,6 +229,7 @@ lua << EOF
     if filename ~= nil then
     	local cmd = string.format("edit +%s %s", line, filename)
     	vim.api.nvim_command(cmd)
+        return
     end
     
     -- ipython traceback
@@ -236,6 +238,7 @@ lua << EOF
     if filename ~= nil then
     	local cmd = string.format("edit +%s %s", line, filename)
     	vim.api.nvim_command(cmd)
+        return
     end
 
     -- julia stacktrace
@@ -244,6 +247,16 @@ lua << EOF
     if filename ~= nil then
     	local cmd = string.format("edit +%s %s", line, filename)
     	vim.api.nvim_command(cmd)
+        return
+    end
+
+    -- julia stacktrace with inline function
+    -- @ ~/repos/sienna/InfrastructureSystems.jl/test/test_system_data.jl:313 [inlined]
+    filename, line = string.match(clipboard, "@ ([~%./%w_-]+):(%d+)")
+    if filename ~= nil then
+    	local cmd = string.format("edit +%s %s", line, filename)
+    	vim.api.nvim_command(cmd)
+        return
     end
 
 EOF
