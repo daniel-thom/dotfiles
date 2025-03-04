@@ -1,0 +1,41 @@
+{
+    "git.openRepositoryInParentFolders": "never",
+    "editor.fontSize": 14,
+    "debug.console.fontSize": 14,
+    "terminal.integrated.fontSize": 16,
+    "chat.editor.fontSize": 14,
+    "scm.inputFontSize": 14,
+    "terminal.integrated.copyOnSelection": true,
+    "terminal.integrated.macOptionClickForcesSelection": true,
+    "terminal.integrated.rightClickBehavior": "paste",
+    "workbench.panel.defaultLocation": "right",
+    "editor.minimap.enabled": false,
+    "terminal.integrated.commandsToSkipShell": [
+        "language-julia.interrupt"
+    ],
+    "julia.symbolCacheDownload": true,
+    "julia.enableTelemetry": false,
+    "redhat.telemetry.enabled": false,
+    "editor.formatOnSave": true,
+    "telemetry.telemetryLevel": "off",
+    "python.analysis.autoImportCompletions": true,
+    "[python]": {
+        
+        "editor.formatOnSave": true,
+        "editor.defaultFormatter": "ms-python.black-formatter"
+    },
+    "black-formatter.args": ["--line-length", "99"],
+    "editor.defaultFormatter": "ms-python.black-formatter",
+    "files.associations": {
+        "*.py": "python"
+    },
+    "editor.rulers": [
+        100
+    ],
+    "explorer.openEditors.sortOrder": "alphabetical",
+    "gitlens.currentLine.enabled": false,
+    "workbench.colorTheme": "Tokyo Night",
+    "workbench.settings.applyToAllProfiles": [
+        
+    ]
+}
