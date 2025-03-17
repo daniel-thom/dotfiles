@@ -8,9 +8,11 @@
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
   "features": {
-    "edit_prediction_provider": "zed"
+    "edit_prediction_provider": "copilot"
   },
   "show_edit_predictions": true,
+  "use_smartcase_search": true,
+  "autosave": "on_focus_change",
   "git": {
     "inline_blame": {
       "enabled": false
@@ -29,7 +31,7 @@
   "theme": {
     "mode": "system",
     "light": "One Light",
-    "dark": "Tokyo Night"
+    "dark": "Ayu Mirage"
   },
   "wrap_guides": [100],
   "show_wrap_guides": true
