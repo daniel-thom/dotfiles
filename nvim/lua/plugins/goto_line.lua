@@ -51,6 +51,5 @@ local function goto_line()
   vim.notify("No file:line pattern found in clipboard", vim.log.levels.WARN)
 end
 
--- Set up the keymap
-vim.keymap.set("n", "<leader>gl", goto_line, { desc = "Goto line from clipboard" })
+vim.keymap.set("n", "<leader>jl", goto_line, { desc = "Goto line from clipboard" })
 return {}

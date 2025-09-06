@@ -1,6 +1,6 @@
 {
   "extras": [
-
+    "lazyvim.plugins.extras.editor.overseer"
   ],
   "install_version": 8,
   "news": {

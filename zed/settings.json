@@ -7,11 +7,21 @@
 // custom settings, run `zed: open default settings` from the
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
+  "agent": {
+    "inline_assistant_model": {
+      "provider": "zed.dev",
+      "model": "claude-sonnet-4"
+    },
+    "always_allow_tool_actions": true
+  },
   "features": {
-    "edit_prediction_provider": "copilot"
+    "edit_prediction_provider": "zed"
   },
   "show_edit_predictions": true,
   "use_smartcase_search": true,
+  "hover_popover_enabled": true,
+  "format_on_save": "off",
+  "remove_trailing_whitespace_on_save": false,
   "autosave": "on_focus_change",
   "git": {
     "inline_blame": {
@@ -26,13 +36,25 @@
     "diagnostics": false
   },
   "vim_mode": true,
-  "ui_font_size": 14,
-  "buffer_font_size": 14,
+  "relative_line_numbers": true,
+  "ui_font_size": 12,
+  "buffer_font_size": 12,
   "theme": {
     "mode": "system",
     "light": "One Light",
-    "dark": "Ayu Mirage"
+    "dark": "One Dark"
   },
   "wrap_guides": [100],
+  "languages": {
+    "Julia": {
+      "wrap_guides": [93]
+    },
+    "Markdown": {
+      "wrap_guides": [100]
+    },
+    "Python": {
+      "wrap_guides": [100]
+    }
+  },
   "show_wrap_guides": true
 }

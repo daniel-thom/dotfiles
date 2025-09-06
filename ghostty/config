@@ -1,0 +1,22 @@
+# theme = "iTerm2 Tango Dark"
+#theme = "adventure"
+#theme = "Ayu Mirage"
+#theme = "tokyonight"
+#theme = "GitHub Dark"
+#theme = "GitLab-Dark"
+#theme = "GitLab-Dark-Grey"
+#theme = "MaterialDarker"
+#theme = "Melange_dark"
+#theme = "Dark Modern"
+#theme = "Dark Modern"
+#theme = "chalk"
+focus-follows-mouse = true
+copy-on-select = clipboard
+font-size = 16
+unfocused-split-opacity = 1
+
+
+# theme = "OneHalfDark"
+# theme = "OneDark"
+theme = "Adwaita Dark"
+
