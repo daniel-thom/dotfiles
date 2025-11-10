@@ -18,5 +18,14 @@
       "ctrl-t": "pane::GoBack"
       // "j k": ["workspace::SendKeystrokes", "escape"]
     }
+  },
+  {
+    "context": "Dock",
+    "bindings": {
+      "ctrl-w h": "workspace::ActivatePaneLeft",
+      "ctrl-w l": "workspace::ActivatePaneRight",
+      "ctrl-w k": "workspace::ActivatePaneUp",
+      "ctrl-w j": "workspace::ActivatePaneDown"
+    }
   }
 ]

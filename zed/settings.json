@@ -29,7 +29,16 @@
     }
   },
   "terminal": {
-    "copy_on_select": true
+    "copy_on_select": true,
+    "shell": {
+      "with_arguments": {
+        "program": "/opt/homebrew/bin/nu",
+        "args": ["--login"]
+      }
+    },
+    "env": {
+      "PATH": "/Users/dthom/.cargo/bin:/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin"
+    }
   },
   "telemetry": {
     "metrics": false,
