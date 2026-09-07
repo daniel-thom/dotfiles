@@ -12,11 +12,24 @@
 #theme = "chalk"
 focus-follows-mouse = true
 copy-on-select = clipboard
-font-size = 16
+right-click-action = paste
+font-size = 14
 unfocused-split-opacity = 1
 
 
 # theme = "OneHalfDark"
 # theme = "OneDark"
-theme = "Adwaita Dark"
+#theme = "Adwaita Dark"
+theme = "tokyonight"
 
+
+# Tiling-friendly window behavior (AeroSpace manages the layout).
+window-inherit-working-directory = true
+window-new-tab-position = end
+macos-titlebar-style = tabs
+
+# Keyboard access to scrollback text (Ghostty has no keyboard-driven selection).
+# `open` dumps the scrollback to a temp file and opens it in the default editor.
+# `paste` types the temp file's path at the prompt instead -- type `nvim ` first.
+keybind = super+shift+o=write_scrollback_file:open
+keybind = super+shift+p=write_scrollback_file:paste

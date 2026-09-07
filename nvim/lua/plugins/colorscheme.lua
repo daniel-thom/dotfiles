@@ -2,7 +2,7 @@ return {
   {
     "LazyVim/LazyVim",
     opts = {
-      colorscheme = "habamax", -- Replace "catppuccin" with your desired colorscheme
+      colorscheme = "tokyonight", -- Replace "catppuccin" with your desired colorscheme
     },
   },
 }
