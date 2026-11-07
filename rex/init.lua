@@ -15,9 +15,15 @@ end
 
 rex.action{
   name = "scrollback_open",
-  title = "Open Scrollback in Editor",
+  title = "Open Scrollback in Floating nvim",
   run = function(ctx)
-    rex.exec({ "open", write_scrollback(ctx) })
+    local path = write_scrollback(ctx)
+    local _, err = rex.session.new_layer({
+      bounds = { 0.05, 0.05, 0.9, 0.85 }, focus = true,
+      layout = rex.layout.block{ flavor = "com.superlogical.terminal.shell", label = "scrollback",
+        options = { command = { "zsh", "-lc", 'nvim + "$1"; rm -f "$1"', "zsh", path } } },
+    })
+    if err then error(err, 0) end
   end,
 }
 
